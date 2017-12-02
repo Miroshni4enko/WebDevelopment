@@ -1,0 +1,30 @@
+*{
+	margin:0;
+	padding:0;
+}
+.button{
+ border: none;
+background-color: transparent;
+ color: transparent;
+}
+.im:hover{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+p{
+margin: 3px;
+}
+legend{
+font-family: Times;
+font-size: 14pt;
+font-color: #0404B4;
+}
+body{
+margin-left: 4px;
+margin-top: 4px;
+}
+fildset{
+-webkit-margin-end: 200px;
+}

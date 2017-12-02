@@ -1,0 +1,16 @@
+﻿<html> 
+	<head> 
+	<title>Заголовок страницы</title> 
+	<script type="text/javascript" src="user_checking.js"></script>
+	<link href="main.css" rel="stylesheet" type="text/css" media="all" />
+	</head> 
+	<body> 
+		<div id='form_A'> 
+			<form action='user_checking.php' method='POST'>
+				<input type='text' value='Имя' name='first_name' class='field' size='10' /><br /> 
+				<input type='text' value='Фамилия' name='last_name' class='field' size='15' /><br /> <br /> 
+				<input type='submit' value='Проверить' class='button' name='check_button' onmouseover="check_fields('first_name', 'last_name'); " /> 
+			</form> 
+		</div> 
+	</body> 
+ </html>

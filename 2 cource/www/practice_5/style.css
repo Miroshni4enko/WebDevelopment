@@ -1,0 +1,31 @@
+body{
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	background-color:#fbfbd4;
+	padding:1%;
+}
+h1 , h2{
+	text-align:center;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+ 
+}
+h2{
+	font: bold italic 140% serif;
+}
+p ,xmp,ul,ol{
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	font-family:Comic Sans, Comic Sans MS, cursive;
+}
+xmp {
+	background-color:white;
+	border-radius: 10px;
+	font-family:Monospace;
+}
+.p--bold {
+	font-weight:bold;
+}

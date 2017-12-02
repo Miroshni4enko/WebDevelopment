@@ -1,0 +1,95 @@
+body {
+	margin-top:0;
+	padding-top:0;
+	background-color:#fbfbd4;
+	
+}
+header {
+	background: #fbfbd4;
+	position:fixed;
+	left:0;
+	z-index:1;
+	width:100%;
+	
+}
+.header-top{
+	margin:0 100px;
+}
+
+.logo {
+	width: 150px;
+    height: 60px;
+	padding-right:40px;
+}
+.blockcontent {
+	border-bottom:none;
+	background-color:white;
+	padding:5%;
+	position:relative;
+	box-sizing:border-box;
+	display:block;
+	margin:0 100px
+}
+.navgorizont {
+	padding:0;
+	margin:0;
+	background-color:white;
+	text-align:center;
+	
+}
+ul.navgorizont li {
+	display: inline-block;
+	padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+footer {
+	color:white;
+	font-size:2.3em;
+	font-weight:bold;
+	text-align:center;
+	margin-top:20px;
+	background-color:dimgray;
+	margin:0 100px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.title,.title:visited,.title:hover,.title:active {
+	text-decoration:none;
+	color:black;
+	font-size:1.7em;
+	margin:5px;
+}
+
+
+.nav {
+  padding: 0px 5px;
+  margin:40px 100px 0 100px;
+  background-color: #303030;
+  border-bottom: 5px solid #000;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 140px;
+  list-style: none;
+  border-right: 1px solid #181818;
+}
+.nav-list a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.nav-list a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Oljk </title>
+	 <link rel='stylesheet' href='css/bootstrap.css' type='text/css'>
+	 <script type="text/javascript" src="js/bootstrap.js"></script>
+	 <link rel="stylesheet" type="text/css" href="4.css">
+	 </head>	
+ <body>
+ 	</div><h3>Заявка на ремонт бытового прибора в сервисном центре <b>"МеееегаМастер"</b>  </h3></div>
+	<div class="row">
+	<form action="" method="get">
+	        
+			<div class=" col-md-4">
+				<div class="form-group"> <label   class="o_label" for="firstname">ФИО</label>
+				<input type="text" name="firstname" class="form-control" id="firstname" placeholder="Введите ФИО..." >
+				</div> 
+			<p class="otstup_v_p"><label for="ek" class="o_label"><b>Способ починки прибора: </b> </label></p>
+			<div class="radio">
+			<p><label><input type="radio" name="way" id="ek" value="house" id="house" checked>Вызов мастера на дом</label></p>
+			</div>
+			<div class="radio">
+			<p><label><input type="radio" name="way" value="center" id="center">Приезд в сервисный центр</label></p> </div>
+			
+			<div class="form-group">
+			<p><label for="dat" class="o_label"><b>Введите дату:</b></label></p>
+			<input type="date" class="form-control" id="dat">
+			</div> 
+			
+			<div class="form-group">			
+			<p><label for="cit" class="o_label"><b>Город:</b></label></p>
+			<select name="city" class="form-control" id="cit">
+			<option selected disabled>Выберете город</option>
+			<option value="Kiev">Киев</option>
+			<option value="Sumy">Сумы</option>
+			<option value="Odessa">Одесса</option>
+			<option value="Rovno">Ровно</option>			
+			</select>		
+			</div> 
+			
+			<div>
+			<p><label id="text" class="o_label"><b>Описание проблемы: </b> </label></p>			
+			<p><textarea rows ="4" id="text" class="form-control" cols="60" name="opus" maxlength="1000" placeholder="Введите описание проблемы..." ></textarea></p>
+		    </div>
+		<div class="checkbox-inline"> 
+		<p><label><input type="checkbox" name="food" value="like" id="food">Люблю поесть   </label>
+		</div> <div class="checkbox-inline"> 
+		<label><input type="checkbox" name="dream" value="like" id="dream">Люблю поспать</label></p>
+		</div>
+		<p>
+		<button type="submit" class="btn btn-success">Submit</button>
+		<button type="reset" class="btn btn-danger">Reset</button></p>	
+		</div>		
+		</form> 
+				<form action="" method="get">
+				<div class="col-md-4">
+				<div class="input-group o_search">
+				<span class="input-group-addon glyphicon glyphicon-search o_glyphicon"></span>
+				<input type="text" class="form-control" name="search" placeholder="Search.."></div>
+				</div>
+				<div class="col-md-1 form-group"> <button type="submit"  class="btn o_btn btn-info">Search</button>
+				</div>
+			</form> 
+	    </div>	
+ </body>
+ 
+</html>

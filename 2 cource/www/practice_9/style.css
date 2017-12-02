@@ -1,0 +1,127 @@
+body {
+	margin-top:0;
+	padding-top:0;
+	background-color:#fbfbd4;
+	position:relative;
+	
+}
+header {
+	background: #fbfbd4;
+	position:fixed;
+	left:0;
+	z-index:1;
+	width:100%;
+	
+}
+.header-top{
+	margin:0 100px;
+}
+
+.logo {
+	width: 150px;
+    height: 60px;
+	padding-right:40px;
+}
+.blockcontent {
+	border-bottom:none;
+	background-color:white;
+	padding:5%;
+	position:absolute;
+	top:190px;
+	margin:0px 100px 20px 100px;
+}
+.navgorizont {
+	padding:0;
+	margin:0;
+	background-color:white;
+	text-align:center;
+	
+}
+ul.navgorizont li {
+	display: inline-block;
+	padding:0;
+	margin-top:5px;
+	margin-bottom:5px;
+	
+}
+footer {
+	color:white;
+	font-size:2.3em;
+	font-weight:bold;
+	text-align:center;
+	background-color:dimgray;
+	position:absolute;
+
+}
+
+.title,.title:visited,.title:hover,.title:active {
+	text-decoration:none;
+	color:black;
+	font-size:1.7em;
+	margin:5px;
+}
+
+
+.nav {
+  padding: 0px 5px;
+  margin:40px 100px 0 100px;
+  background-color: #303030;
+  border-bottom: 5px solid #000;
+}
+.nav-list {
+  margin: 0;
+  padding: 0;
+}
+.nav-list li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 140px;
+  list-style: none;
+  border-right: 1px solid #181818;
+}
+.nav-list a {
+  display: block;
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+}
+.nav-list a:hover {
+  text-decoration: underline;
+}
+/**************************таблица****************************/
+td,th div {
+	padding:2px;
+}
+th {
+	background-color:#303030;
+	color:white;
+	border-left:2px solid #B5B5B5;
+	border-top:2px solid #B5B5B5;
+	border-bottom:2px solid #B5B5B5;
+	padding:2px;
+}
+td {
+	background-color:white;
+	border-left:2px solid #B5B5B5;
+	text-align:center;
+	width:140px;
+}
+.topbordernone{
+	border-bottom:none;
+}
+.endth {
+	border-right:2px solid #B5B5B5;
+}
+.botborder{
+	border-bottom:2px solid #B5B5B5;
+}
+
+tr:hover td{
+	background-color:#fbfbd4;
+	
+}
+
+td:hover {
+	font-weight:bold;
+}

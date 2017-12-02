@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Web Development</title>
+<link rel="stylesheet" type="text/css" href="form-style.css">
+</head>
+<body>
+<div class="container">
+		<div class="form-content">
+			<form class="form" action="" method = "">
+				<fieldset>
+					<legend><h2>Подбор и покупка домашнего питомца</h2></legend>
+					<div class="field">
+						<label for="type">Вид питомца:</label>
+					<span  class="tooltip">	
+						<input id="type" type="text" />
+						<span class="tooltiptext">Введите вид питомца</span>
+					</span>
+					</div>
+					<div class="field">
+						
+					<label>Дата рождения:</label>
+					<span  class="tooltip">
+					<input type="date" />
+						<span class="tooltiptext">Выберите дату рождения</span>
+					</span>
+					</div>
+
+					<div class="field">
+						
+					<label>Пол:</label>
+					<span  class="tooltip">
+					<select>
+							<option>Самец</option>
+							<option>Самка</option>
+					</select>
+					<span class="tooltiptext">Выберите пол</span>
+					</span>
+					</div>
+	
+					<div class="field">
+					
+					<label>С доставкой:</label>
+					
+					<input type="checkbox"/>
+					
+					</div>
+
+					<div class="field">
+						
+					<label>E-mail: </label>
+					<span  class="tooltip">
+					<input type="email"/>
+							<span class="tooltiptext">Введите почту</span>
+					</span>
+					</div>
+
+					<div class="field">
+					<label class="radio-label"> Оцените сервис:</label>
+					<div class="radio"><input type="radio"> Да, все отлично)</div>
+						<div class="radio"><input type="radio"> Есть недоработки.</div>
+						<div class="radio"><input type="radio"> Нет!  </div>
+					</div>
+					
+					<div class="field">
+						
+					<label class="textarea-field">Дополнительные пожелания:
+					<textarea rows="10" ></textarea>
+</label>
+					</div>
+
+					<div class="buttonset">
+						<input class="button" type="submit" value ="Заказать"/>
+						<input class="button" type="reset" value ="Очистить"/>
+					</div>
+					
+				</fieldset>
+			</form>
+		</div>
+</div>
+</body>
+</html>
