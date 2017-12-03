@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pr6</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+	<body>
+
+        <p>Форма подбора и покупки туристической путевки: 
+        <br> 
+        </p>
+		<form  name ="" action="" method="" onsubmit="calc(); return false;">
+            Введите имя: <br>
+            <input type="text"  id="name">
+            <br><br>
+			Введите электронную почту: <br> 
+            <input type="email"  id="mail" > <br><br>
+			Выберите странну для тура: 
+			<select id="country">
+				<option>Украина</option>
+				<option>Нарния</option>
+				<option>Эквадор</option>
+			<select><br><br>
+			Отель:<br>
+			Бесплатная парковка 
+			<input type="checkbox" id="free_parking"><br>
+			Басейн 
+			<input type="checkbox" id="pool"><br>
+			Выберите количество звезд:<br>
+			<input name="amount_of_stars" type="radio" value="3" checked>3<br>
+			<input name="amount_of_stars" type="radio" value="4">4<br>
+			<input name="amount_of_stars" type="radio" value="5">5<br>
+			<br>
+			
+			Наличие промокода
+			<input type="checkbox" id="promo" onclick="check()"><br>
+			<input type="number" id="promo_field">
+			<br><br>
+            <input type = "submit" value="Получить путевку"> <input type="reset"> 
+            <br><br><input type="text" name="name" id="result" disabled>
+		</form>
+        <br>
+        <script src="jss.js"></script>
+  
+    </body>
+    
+</html>
