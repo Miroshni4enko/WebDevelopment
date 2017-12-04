@@ -1,6 +1,6 @@
 function parse() {
-	//var str = "Aaa dsds FFsf faafD sd Dasd sad \nAfd \tDsd" 
-	var capitalLetterPatt = /([^\S]|^)([A-Z]\S*)/g;
+	//var str = "Aaa dsds FFsf faafD sd Dasd sad" 
+	var capitalLetterPatt = /([A-Z]\S*)(?=([^\S]|^))/g;
 	var capitalLetter = document.getElementById('capitalLetter');
 	capitalLetter.innerHTML = capitalLetter.innerHTML.replace(capitalLetterPatt, 'win');
 	//var result = str.match(capitalLetterPatt);
