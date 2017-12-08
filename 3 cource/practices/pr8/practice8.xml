@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<catalog>
+	<videocamera id="aaa">
+		<manufacturer>Samsung</manufacturer>
+		<zoom>Optical</zoom>
+		<pixels>13</pixels>
+		<display>320×480</display>
+		<autoexposure>12</autoexposure>
+		<digital_effects>120</digital_effects>
+		<white_balance>Manualy</white_balance>
+		<lighting_function>Night view</lighting_function>
+	</videocamera>
+	<videocamera id="aab">
+		<manufacturer>Philips</manufacturer>
+		<zoom>Digital</zoom>
+		<pixels>13</pixels>
+		<display>320×480</display>
+		<autoexposure>34</autoexposure>
+		<digital_effects>10</digital_effects>
+		<white_balance>Auto</white_balance>
+		<lighting_function>85</lighting_function>
+	</videocamera>
+	<videocamera id="aba">
+		<manufacturer>Zanussi</manufacturer>
+		<zoom>Optical</zoom>
+		<pixels>13</pixels>
+		<display>320×480</display>
+		<autoexposure>12</autoexposure>
+		<digital_effects>20</digital_effects>
+		<white_balance>Auto</white_balance>
+		<lighting_function>Min. illumination</lighting_function>
+	</videocamera>
+	<videocamera id="abb">
+		<manufacturer>LG</manufacturer>
+		<zoom>Optical</zoom>
+		<pixels>13</pixels>
+		<display>320×480</display>
+		<autoexposure>20</autoexposure>
+		<digital_effects>120</digital_effects>
+		<white_balance>Auto</white_balance>
+		<lighting_function>70</lighting_function>
+	</videocamera>
+</catalog>
