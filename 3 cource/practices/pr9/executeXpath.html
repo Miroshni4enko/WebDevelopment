@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Variant 14</p>
+<p id="path1"></p>
+<p id="path2"></p>
+<p id="path3"></p>
+<p id="path4"></p>
+
+<script>
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        showResultNode(xhttp.responseXML, "//year/..", "path1");
+        showResultNodeValue(xhttp.responseXML, "//book[1]/author", "path2");
+        showResultNodeValue(xhttp.responseXML, "//title[@*=\"en\"]", "path3");
+        showResultNode(xhttp.responseXML, "//book/*[.=\"2003\"]", "path4");
+    }
+};
+xhttp.open("GET", "bookstore.xml", true);
+xhttp.send(); 
+
+function showResultNode(xml, path, elementId) {
+    var txt = "";
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+            txt += result.nodeName + "<br>";
+            result = nodes.iterateNext();
+        } 
+    // Code For Internet Explorer
+    } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        xml.setProperty("SelectionLanguage", "XPath");
+        nodes = xml.selectNodes(path);
+        for (i = 0; i < nodes.length; i++) {
+            txt += nodes[i].childNodes[0].nodeValue + "<br>";
+        }
+    }
+    document.getElementById(elementId).innerHTML = txt;
+}
+
+function showResultNodeValue(xml, path, elementId) {
+    var txt = "";
+    if (xml.evaluate) {
+        var nodes = xml.evaluate(path, xml, null, XPathResult.ANY_TYPE, null);
+        var result = nodes.iterateNext();
+        while (result) {
+            txt += result.childNodes[0].nodeValue + "<br>";
+            result = nodes.iterateNext();
+        } 
+    // Code For Internet Explorer
+    } else if (window.ActiveXObject || xhttp.responseType == "msxml-document") {
+        xml.setProperty("SelectionLanguage", "XPath");
+        nodes = xml.selectNodes(path);
+        for (i = 0; i < nodes.length; i++) {
+            txt += nodes[i].childNodes[0].nodeValue + "<br>";
+        }
+    }
+    document.getElementById(elementId).innerHTML = txt;
+}
+</script>
+
+</body>
+</html>

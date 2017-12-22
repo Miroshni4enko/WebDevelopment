@@ -1,0 +1,40 @@
+<bookstore>
+	<book category="Кулинария">
+		<title lang="ru">Национальная кухня</title>
+		<author>И. И. Иванов</author>
+		<year>2005</year>
+		<price>30.00</price>
+		<level min="1" max="5">3</level>
+	</book>
+	<book category="Дети">
+		<title lang="en">Harry Potter</title>
+		<author>J K. Rowling</author>
+		<year>2005</year>
+		<price>29.99</price>
+		<level min="1" max="5">2</level>
+	</book>
+	<book category="Дети">
+		<title lang="ru">Колобок</title>
+		<year>1998</year>
+		<price>10.99</price>
+		<level min="1" max="5">1</level>
+	</book>
+	<book category="ВЕБ">
+		<title lang="en">XQuery Kick Start</title>
+		<author>James McGovern</author>
+		<author>Per Bothner</author>
+		<author>Kurt Cagle</author>
+		<author>James Linn</author>
+		<author>Vaidyanathan Nagarajan</author>
+		<year>2003</year>
+		<price>49.99</price>
+		<level min="1" max="5">5</level>
+	</book>
+	<book category="ВЕБ">
+		<title lang="en">Learning XML</title>
+		<author>Erik T. Ray</author>
+		<year>2003</year>
+		<price>39.95</price>
+		<level min="1" max="5">5</level>
+	</book>
+</bookstore>
