@@ -1,0 +1,50 @@
+{
+  "catalog": {
+    "videocamera": [
+      {
+        "id": "aaa",
+        "manufacturer": "Samsung",
+        "zoom": "Optical",
+        "pixels": "13",
+        "display": "320×480",
+        "autoexposure": "12",
+        "digital_effects": "120",
+        "white_balance": "Manualy",
+        "lighting_function": "Night view"
+      },
+      {
+        "id": "aab",
+        "manufacturer": "Philips",
+        "zoom": "Digital",
+        "pixels": "13",
+        "display": "320×480",
+        "autoexposure": "34",
+        "digital_effects": "10",
+        "white_balance": "Auto",
+        "lighting_function": "85"
+      },
+      {
+        "id": "aba",
+        "manufacturer": "Zanussi",
+        "zoom": "Optical",
+        "pixels": "13",
+        "display": "320×480",
+        "autoexposure": "12",
+        "digital_effects": "20",
+        "white_balance": "Auto",
+        "lighting_function": "Min. illumination"
+      },
+      {
+        "id": "abb",
+        "manufacturer": "LG",
+        "zoom": "Optical",
+        "pixels": "13",
+        "display": "320×480",
+        "autoexposure": "20",
+        "digital_effects": "120",
+        "white_balance": "Auto",
+        "lighting_function": "70"
+      }
+    ]
+  }
+}
