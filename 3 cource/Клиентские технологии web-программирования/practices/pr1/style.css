@@ -1,0 +1,38 @@
+#first-block.active {
+	display: block;
+	width: 200px;
+	height: 200px;
+    background: limegreen;
+
+}
+
+#first-block.click1 {
+    display: block;
+	border: 1px solid green;
+    background: yellow;
+	width: 150px;
+	height: 150px;
+	opacity: 0.5;
+}
+
+#second-block.active {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: black;
+    position: absolute;
+
+}
+#myContainer {
+    height: 400px;
+    position: relative;
+}
+
+#second-block.click1 {
+    display: block;
+    border: 1px solid green;
+    background: yellow;
+    width: 150px;
+    height: 150px;
+    opacity: 0.5;
+}

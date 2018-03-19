@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viacheslav M, 1 variant </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="paragraph">
+    <p>По клику на абзаце изменять начертание шрифта текста</p>
+</div>
+<form method="get" action="">
+    Bold
+    <input type="checkbox" name="bold">
+    <br>
+    Italic
+    <input type="checkbox" name="italic">
+    <br>
+    Without any inscriptions
+    <input  type="checkbox" name="no-inscription">
+</form>
+
+<script>
+    window.onload = function () {
+        changeInscription();
+        changeInscriptionByParagraphClick();
+    };
+</script>
+<script src="js/changeInscription.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+</body>
+</html>

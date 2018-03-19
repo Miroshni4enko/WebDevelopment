@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Viacheslav M, 1 variant </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="paragraph">
+    <p>Первое поле предусматривает ввод значения не более 5 символов</p>
+    <p>Второе поле позволяет ввести только отрицательное число.</p>
+</div>
+<form method="get" action="">
+
+    Username:
+    <input type="text" name="usrname">
+
+    <br>
+
+    Limit:
+    <input type="number" name="limit">
+    <span id="limit-err"></span>
+    <br>
+
+    <input type="submit" value="Submit" disabled>
+
+</form>
+
+<script>
+    window.onload = function () {
+        validateForm();
+    };
+</script>
+<script src="js/validateForm.js"></script>
+<script src="js/jquery-3.3.1.js"></script>
+</body>
+</html>
