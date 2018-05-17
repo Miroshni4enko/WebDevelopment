@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Тест</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<script src="js/jquery-3.3.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				// variables for data saving
+				var name;
+				var male;
+				var animal;
+				var like;
+				// first test page button
+				// on click, if all fields are filled, hide first test page and show second test page
+				// and save value of fields
+				$('div.first_page button').click(function(){
+					if($('#name').val() != '' && ($('#male').is(':checked') || $('#female').is(':checked'))){
+						$('.alert').hide();
+						$('div.second_page').show();
+						$('div.first_page').hide();
+						$('span.first_page').css({background:'none',color:'black'});
+						$('span.second_page').css({background:'crimson',color:'white'});
+						name = $('#name').val();
+						if($('#male').is(':checked')) {
+							male = true;
+						} else {
+							male = false;
+						}
+					} else {
+						$('.alert').show();
+					}
+				});
+				// second test page button
+				// on click, if all fields are filled, hide second test page and show third test page
+				// and save value of fields
+				$('div.second_page button').click(function(){
+					if($('#cat').is(':checked') || $('#kar').is(':checked')){
+						$('.alert').hide();
+						$('div.third_page').show();
+						$('div.second_page').hide();
+						$('span.second_page').css({background:'none',color:'black'});
+						$('span.third_page').css({background:'crimson',color:'white'});
+						if ($('#cat').is(':checked')) {
+							animal = "котов";
+						} else {
+							animal = "карасей";
+						}
+					} else {
+						$('.alert').show();
+					}
+				});
+				// third test page button
+				// on click, if all fields are filled, hide third test page and show result test page
+				// and save value of fields
+				// show result of test
+				$('div.third_page button').click(function(){
+					if($('#red').is(':checked') || $('#synhr').is(':checked')){
+						$('.alert').hide();
+						$('div.result').show();
+						$('div.third_page').hide();
+						$('span.third_page').css({background:'none',color:'black'});
+						if ($('#red').is(':checked')) {
+							like = "Отлично";
+							if($('#synhr').is(':checked')) {
+								like += ", но зачем вы выбрали синхрофазатрон";
+							}
+						} else {
+							like = "Зачем вы выбрали синхрофазатрон";
+						}
+						if (male) {
+							$('div.result h1').text("Уважаемый, " + name);
+						}else {
+							$('div.result h1').text("Уважаемая, " + name);
+						}
+						
+						$('.animalres').text("Вы любите " + animal);
+						$('.likeresult').text(like);
+						$('.result_word').show();
+						$('.steps').hide();
+					} else {
+						$('.alert').show();
+					}
+				});
+				// restart button
+				// hide result test page, show first test page
+				// set input fields empty
+				$('.result button').click(function(){
+					$('div.first_page').show();
+					$('div.result').hide();
+					$('span.third_page').css({background:'none',color:'black'});
+					$('span.first_page').css({background:'crimson',color:'white'});
+					$('.result_word').hide();
+					$('.steps').show();
+					$('#name').val('');
+					$("[type='radio'], [type='checkbox']").prop("checked",false);
+				});
+		    })
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1>Супер просто мега тест от Ромашки</h1>
+		</header>
+		<div class="main">
+			<p class="steps"> <span class="first_page">Шаг 1</span> <span class="second_page">Шаг 2</span> <span class="third_page">Шаг 3</span> </p>
+			<p class="result_word">Результат </p>
+			<p class="alert">Не все выбрано</p>
+			<div class="first_page">
+				<form>
+					<p><label>Введите имя: <input id="name" type="text" name="name"></label></p>
+					<p>Выбирите пол:</p>
+					<p><label>Мужчина <input id="male" type="radio" name="male" value="true"></label></p>
+					<p><label>Женщина <input id="female" type="radio" name="male" value="false"></label></p>
+					<button type="button">Далее</button>
+				</form>
+			</div>
+			
+			<div class="second_page">
+				<form>
+					<p>Выбирите любимое животное:</p>
+					<p><label>Кот <input id="cat" type="radio" name="animal"></label></p>
+					<p><label>Карась <input id ="kar" type="radio" name="animal"></label></p>
+					<button type="button">Далее</button>
+				</form>
+			</div>
+			
+			<div class="third_page">
+				<form>
+					<p>Выбирите то, что вам нравиться:</p>
+					<p><label>Красный <input id="red" type="checkbox" name="like"></label></p>
+					<p><label>Синхрофазатрон <input id="synhr" type="checkbox" name="like"></label></p>
+					<button type="button">Закончить</button>
+				</form>
+			</div>
+			
+			<div class="result">
+				<div>
+					<h1> </h1>
+					<p class="animalres"></p>
+					<p class="likeresult"></p>
+					<p><button type="button">Заново</button></p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<footer>
+			<h2>Romashka inc, 2018</h2>
+		</footer>
+	</body>
+</html>

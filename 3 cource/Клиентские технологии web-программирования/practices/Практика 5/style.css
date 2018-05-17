@@ -1,0 +1,96 @@
+body {
+    background: gainsboro;
+}
+body > * {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+div.second_page,div.third_page,div.result {
+	display:none;
+}
+.result {
+	text-align:center;
+}
+.main {
+    padding-top: 1px;
+    background: white;
+    margin-top: 0;
+    border: 2px solid #707070;
+    border-top:none;
+}
+
+header {
+    border: 2px solid #707070;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background: crimson;
+    color: white;
+	text-align:center;
+}
+footer {
+    border: 2px solid #707070;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background: crimson;
+    color: white;
+    border-top: none;
+    padding-top: 1px;
+	text-align:center;
+}
+
+.steps, .result_word{
+	margin-left:5%;
+	font-size:20pt;
+	font-weight:bold;
+}
+
+.result_word {
+	display:none;
+}
+form,.result >div {
+	width:50%;
+	border:1px solid gray;
+	margin-left:23%;
+	margin-bottom:2%;
+	padding:2%;
+}
+span {
+	padding:1%;
+	border-radius:5px;
+}
+span.first_page{
+	background:crimson;
+	color:white;
+}
+button{
+	margin:2px;
+	background-color: #04B45F;
+	height:40px;
+	outline:none;
+	width: 130px;
+	font-family:Arial;
+	color:#ffffff;
+	border:0px;
+	font-size:15pt;
+	transition-property:background-color;
+	transition: box-shadow 1s;
+}
+button:visited{
+	
+}
+button:hover{
+	background-color:#04B486;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	transition: 1s;
+}
+button:active{
+	background-color:#458316;
+	transition: 0.15s;
+}
+.alert {
+	color:red;
+	display:none;
+	margin-left:5%;
+}
+

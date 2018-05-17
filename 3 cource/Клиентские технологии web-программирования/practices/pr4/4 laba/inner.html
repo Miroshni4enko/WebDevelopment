@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='style.css' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/java.js"></script>
+    <title>Miroshni4enko V.I</title>
+
+</head>
+<body>
+<div id="div1" class="blok"></div>
+<div id="div2" class="blok1"></div>
+<div id="div3" class="blok2"></div>
+<div id="div4" class="blok3"></div>
+<button class="button">Change (to perform first task)</button>
+<button class="button" id="button2">hide items </button>
+<button class="button" id="button3">show items</button>
+<script>
+    $("button").click(function () {
+        $("#div1").animate({top: '-330px'});
+        $("#div1").animate({width: '150', height: '140'});
+        $("#div1").animate({left: '-562px'});
+    })
+    $("#div4").hover(function () {
+        $("#div2").fadeToggle(4000);
+        $("#div3").fadeToggle(4000);
+        $("#div4").fadeToggle(4000);
+        $("#div1").fadeToggle(4000);
+    })
+    $("#button2").click(function () {
+        $("#div2").slideUp();
+        $("#div3").fadeTo("slow", 0);
+        $("#div4").slideToggle();
+    })
+    $("#button3").click(function () {
+        $("#div2").slideDown();
+        $("#div3").fadeTo("slow", 0.8);
+        $("#div4").slideToggle();
+    })
+</script>
+
+
+</body>
+</html>

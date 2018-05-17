@@ -1,0 +1,98 @@
+body {
+    background: burlywood;
+}
+body > * {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+body h2,p {
+	margin-bottom:0;
+	padding-bottom:0.83em;
+}
+.main {
+    padding-top: 1px;
+    background: white;
+    margin-top: 0;
+    border: 2px solid darkmagenta;
+    border-top:none;
+	padding-bottom:10px;
+}
+
+.main > div {
+	width:80%;
+	margin-left:10%;
+	border:1px solid white;
+	border-bottom:none;
+}
+.main > .items {
+	display:none;
+	background:gainsboro;
+}
+.main div:first-child {
+	margin-top:10px;
+}
+.main div:last-child {
+	border-bottom:1px solid white;
+	margin-bottom:10px;
+}
+.items-header {
+	text-align: center;
+	background-color: darkmagenta;
+	color:white;
+	transition-property:background-color;
+	transition: box-shadow 1s;
+}
+.items-header:hover {
+	background-color:deeppink;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	transition: 1s;
+}
+p, h2 {
+	margin-left:5px;
+	margin-right:5px;
+}
+header {
+    border: 2px solid #707070;
+    border-top-left-radius:20px;
+    border-top-right-radius:20px;
+    background: crimson;
+    color: white;
+	text-align: center;
+}
+footer {
+    border: 2px solid #707070;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    background: crimson;
+    color: white;
+    border-top: none;
+    padding-top: 1px;
+	text-align: center;
+}
+button{
+	margin:2px;
+	background-color: #04B45F;
+	height:40px;
+	outline:none;
+	width: 130px;
+	font-family:Arial;
+	color:#ffffff;
+	border:0px;
+	font-size:15pt;
+	transition-property:background-color;
+	transition: box-shadow 1s;
+	margin-bottom:2%;
+}
+button:visited{
+	
+}
+button:hover{
+	background-color:#04B486;
+	box-shadow:0 0 10px rgba(0,0,0,0.5);
+	transition: 1s;
+}
+button:active{
+	background-color:#458316;
+	transition: 0.15s;
+}

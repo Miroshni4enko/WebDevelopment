@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 7 </title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+</head>
+<body>
+<div class="container">
+    <form id="form">
+        <div class="row">
+            <div class="col-25">
+                <label>Введите число:</label>
+            </div>
+            <div class="col-75">
+                <input id="numberInput" type="text" name="number">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Введите e-mail:</label>
+            </div>
+            <div class="col-75">
+                <input id="eInput" name="eMail" type="email" placeholder="example@example.ua">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Введите пароль:</label>
+            </div>
+            <div class="col-75">
+                <input id="pInput" type="password" name="pass">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Повторите пароль: </label>
+            </div>
+            <div class="col-75">
+                <input id="rpInput" type="password" name="repass">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label>Введите число снова : </label>
+            </div>
+            <div class="col-75">
+                <input id="tInput" type="text" name="numberyet">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label>Введите дату рождения :</label>
+            </div>
+            <div class="col-75">
+                <input id="btInput" type="text" name="borndate" onkeyup="myValidate()"><span
+                    id="vlid">not valid</span>
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit">Enter</button>
+        </div>
+    </form>
+</div>
+<script src="js/scr.js"></script>
+</body>
+</html>
